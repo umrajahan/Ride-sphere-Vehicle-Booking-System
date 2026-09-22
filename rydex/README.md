@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Ridesphere – Vehicle Booking and Management System
 
-## Getting Started
+Ridesphere is a web-based **Vehicle Booking and Management System** designed to make vehicle searching, booking, payment, and user management easier and more convenient.
 
-First, run the development server:
+##  Features
+
+*  User Registration and Login
+*  Vehicle Browsing and Searching
+*  Vehicle Booking
+*  Online Payment Integration
+*  Email Notifications
+*  Location and Map Integration
+*  Authentication and User Management
+*  Booking Management
+*  Real-time Communication using Socket.IO
+*  Cloudinary Integration for Image Management
+
+##  Technologies Used
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* CSS
+
+### Backend
+
+* Next.js API Routes
+* Node.js
+* Socket.IO
+
+### Database
+
+* MongoDB
+
+### Other Technologies
+
+* Razorpay
+* Cloudinary
+* Nodemailer
+
+##  Project Structure
+
+```text
+Ridesphere Vehicle Booking and Management System
+│
+├── rydex/
+│   ├── public/
+│   ├── src/
+│   │   ├── app/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   ├── models/
+│   │   └── redux/
+│   ├── package.json
+│   └── README.md
+│
+├── socketServer/
+│   ├── models/
+│   ├── index.js
+│   └── package.json
+│
+└── .gitignore
+```
+
+##  How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/umrajahan/Ride-sphere-Vehicle-Booking-System.git
+```
+
+### 2. Open the project
+
+```bash
+cd Ride-sphere-Vehicle-Booking-System
+```
+
+### 3. Install dependencies for Rydex
+
+```bash
+cd rydex
+npm install
+```
+
+### 4. Start the Next.js application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will normally run at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5. Run the Socket Server
 
-## Learn More
+Open another terminal:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+cd socketServer
+npm install
+node index.js
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##  Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For security, API keys and other secret information should be stored in environment files such as `.env.local`.
 
-## Deploy on Vercel
+**Do not upload secret keys or passwords to GitHub.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  Project Objective
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The main objective of Ridesphere is to provide a simple and efficient platform where users can search for vehicles, make bookings, manage their reservations, and complete payments through an online system.
+
+##  Future Scope
+
+* Mobile application
+* Advanced vehicle recommendation system
+* Admin analytics dashboard
+* Improved payment options
+* AI-based vehicle recommendations
+* Advanced booking and notification system
+
+
+##  Repository
+
+GitHub Repository:
+
+`https://github.com/umrajahan/Ride-sphere-Vehicle-Booking-System`
